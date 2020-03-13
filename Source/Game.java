@@ -6,8 +6,8 @@ public class Game {
   public static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
   // The random number generator used throughout
-  public static RandomInterface r;//=new LinearCongruentialGenerator();
-  
+  public static RandomInterface r = new LinearCongruentialGenerator();
+
   // Variable(s) used in the card game methods
   public static ArrayList<String> cardList;
   public static HashSet<String> cardsChosen=new HashSet<String>();
@@ -51,7 +51,7 @@ public class Game {
         int secondIndex=((int) (r.next() * 52));
         String temp=(String) cardList.get(firstIndex);
         cardList.set(firstIndex, cardList.get(secondIndex));
-        cardList.set(secondIndex, temp); 
+        cardList.set(secondIndex, temp);
       }
 
       // Print out the result
@@ -80,7 +80,7 @@ public class Game {
   public static void declareCardGameWinner() throws Exception {
       // Declare the winner:
 
-      // User wins if one of them is an Ace 
+      // User wins if one of them is an Ace
       System.out.println("Cards chosen: " + cardsChosen);
       if (cardsChosen.contains("AHrts") || cardsChosen.contains("ADmnds") ||
           cardsChosen.contains("ASpds") || cardsChosen.contains("AClbs")) {
@@ -115,7 +115,7 @@ public class Game {
       // The main game:
 
       // Let the user roll the die twice
-      for (int i=0; i<2; i++) {
+      for (int i=0; i<2; i++) { 
         System.out.println("Hit <RETURN> to roll the die");
         br.readLine();
         int dieRoll=(int)(r.next() * 6) + 1;
@@ -155,4 +155,3 @@ public class Game {
     else System.out.println("Input not understood");
   }
 }
-
