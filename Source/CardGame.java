@@ -9,8 +9,8 @@ public class CardGame implements Game2 {
 //  public static RandomInterface r = new LinearCongruentialGenerator();
 
   // Variable(s) used in the card game methods
-  public static ArrayList<String> cardList;
-  public static HashSet<String> cardsChosen=new HashSet<String>();
+  private static ArrayList<String> cardList;
+  private static HashSet<String> cardsChosen=new HashSet<String>();
 
 
 

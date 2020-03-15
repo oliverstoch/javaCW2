@@ -14,6 +14,8 @@ public class Game {
 
     System.out.print("Card (c) or Die (d) game? ");
     String ans=br.readLine();
+
+    
     GameFactory factory = new GameFactory();
     Game2 game = factory.createGame(ans);
     game.playGame();

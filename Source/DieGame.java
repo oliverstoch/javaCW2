@@ -4,7 +4,7 @@ import java.util.*;
 public class DieGame implements Game2 {
 
 //Variable(s) used in the die game methods
-  public static HashSet<Integer> numbersRolled=new HashSet<Integer>();
+  private static HashSet<Integer> numbersRolled=new HashSet<Integer>();
 
 
   public  void playGame() throws Exception {
