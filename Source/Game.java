@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Game {
   // The BufferedReader used throughout
-  public static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+  private static BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
   // The random number generator used throughout
 //  public static RandomInterface r = new LinearCongruentialGenerator();
@@ -15,7 +15,7 @@ public class Game {
     System.out.print("Card (c) or Die (d) game? ");
     String ans=br.readLine();
 
-    
+
     GameFactory factory = new GameFactory();
     Game2 game = factory.createGame(ans);
     game.playGame();

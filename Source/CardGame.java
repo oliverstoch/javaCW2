@@ -26,7 +26,7 @@ public class CardGame implements Game2 {
       declareGameWinner();
   }
 
-  public  void initialiseGame() throws Exception {
+  private  void initialiseGame() throws Exception {
       // The initialisation phase:
 
       // Create a list of cards ... and shuffle them
@@ -59,7 +59,7 @@ public class CardGame implements Game2 {
       System.out.println(cardList);
   }
 
-  public  void mainGame() throws Exception {
+  private  void mainGame() throws Exception {
       // The main game:
 
       // Let user select two cards from the pack
@@ -78,7 +78,7 @@ public class CardGame implements Game2 {
 
   }
 
-  public  void declareGameWinner() throws Exception {
+  private  void declareGameWinner() throws Exception {
       // Declare the winner:
 
       // User wins if one of them is an Ace

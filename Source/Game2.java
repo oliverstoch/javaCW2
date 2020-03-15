@@ -14,7 +14,7 @@ interface Game2 {
   //public static HashSet<Integer> numbersRolled=new HashSet<Integer>();
 
   public  void playGame()throws Exception;
-  //public  void initialiseGame() throws Exception;
+  public  void initialiseGame() throws Exception;
   public  void mainGame()throws Exception;
   public  void declareGameWinner() throws Exception;
 

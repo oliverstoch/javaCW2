@@ -9,13 +9,10 @@ public class DieGame implements Game2 {
 
   public  void playGame() throws Exception {
       // Play die game:
-
       // Initialise the game
     //  initialiseDieGame();
-
       // Play the main game phase
       mainGame();
-
       // Now see if (s)he has won!
       declareGameWinner();
   }
@@ -26,7 +23,7 @@ public class DieGame implements Game2 {
   //     // Actually there isn't anything to do here
   // }
 
-  public  void mainGame() throws Exception {
+  private  void mainGame() throws Exception {
       // The main game:
 
       // Let the user roll the die twice
@@ -43,7 +40,7 @@ public class DieGame implements Game2 {
       System.out.println("Numbers rolled: " + numbersRolled);
   }
 
-  public  void declareGameWinner() throws Exception {
+  private  void declareGameWinner() throws Exception {
       // Declare the winner:
 
       // User wins if at least one of the die rolls is a 1
